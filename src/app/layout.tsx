@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Merdeka InfoTek | Official Site",
+  description: "Do you need web application built for your company? Reach out to us!",
 };
 
 export default function RootLayout({

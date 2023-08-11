@@ -7,10 +7,16 @@ import github from "public/logo/github.svg";
 const Footer = () => {
   return (
     <footer className="flex flex-col place-content-center items-center pt-20 px-10">
-      <Image className="mb-3" src={logo} alt="merdeka infotek" height={48} width={48} />
+      <Image
+        className="mb-3"
+        src={logo}
+        alt="merdeka infotek"
+        height={48}
+        width={48}
+      />
       <div>
         <p className="text-2xl text-center mb-12">
-          Let &apos;s be partners for developing a better web experience
+          Let&apos;s be partners for developing a better web experience
         </p>
         <div className="flex place-content-center gap-4 mb-5">
           <Image src={fb} alt="merdeka infotek" height={28} width={28} />
