@@ -1,4 +1,4 @@
-import { team } from "../../constant";
+import { team } from "@/constant";
 import Image from "next/image";
 
 const TeamCard = () => {
