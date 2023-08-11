@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/layouts/Footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Merdeka InfoTek | Official Site",
-  description: "Do you need web application built for your company? Reach out to us!",
+  description:
+    "Do you need web application built for your company? Reach out to us!",
 };
 
 export default function RootLayout({
@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
-      
         <Footer />
       </body>
     </html>
