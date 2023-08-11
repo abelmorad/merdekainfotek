@@ -1,6 +1,6 @@
-import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import logo from "/public/logo/merdaka.png";
-import Image from "next/image";
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
+import logo from '/public/logo/merdaka.png'
+import Image from 'next/image'
 
 function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
   return (
@@ -17,7 +17,7 @@ function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
           </p>
         </div>
         <CloseOutlinedIcon
-          style={{ height: "30px", width: "30px" }}
+          style={{ height: '30px', width: '30px' }}
           onClick={closeBtn}
         />
       </div>
@@ -36,7 +36,7 @@ function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
         </a>
       </div>
     </nav>
-  );
+  )
 }
 
-export default NavBarMobile;
+export default NavBarMobile

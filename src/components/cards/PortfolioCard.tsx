@@ -1,5 +1,5 @@
 const PortfolioCard = () => {
-  return <div>PortfolioCard</div>;
-};
+  return <div>PortfolioCard</div>
+}
 
-export default PortfolioCard;
+export default PortfolioCard
