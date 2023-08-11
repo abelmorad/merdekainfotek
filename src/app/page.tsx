@@ -19,7 +19,7 @@ function Landing() {
         Let&apos;s Work
       </a>
     </section>
-  );
+  )
 }
 
-export default Landing;
+export default Landing

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import logo from "public/logo/merdaka.png";
-import fb from "public/logo/facebook.svg";
-import linkedin from "public/logo/linkedin.svg";
-import github from "public/logo/github.svg";
+import Image from 'next/image'
+import logo from 'public/logo/merdaka.png'
+import fb from 'public/logo/facebook.svg'
+import linkedin from 'public/logo/linkedin.svg'
+import github from 'public/logo/github.svg'
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
