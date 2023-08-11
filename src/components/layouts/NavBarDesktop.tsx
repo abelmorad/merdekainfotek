@@ -14,7 +14,7 @@ function NavBarDesktop() {
         Contact Us
       </a>
     </nav>
-  );
+  )
 }
 
-export default NavBarDesktop;
+export default NavBarDesktop

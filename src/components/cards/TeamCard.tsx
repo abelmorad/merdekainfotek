@@ -1,5 +1,5 @@
-import { team } from "@/constant";
-import Image from "next/image";
+import { team } from '@/constant'
+import Image from 'next/image'
 
 const TeamCard = () => {
   return (
@@ -23,7 +23,7 @@ const TeamCard = () => {
         </div>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default TeamCard;
+export default TeamCard

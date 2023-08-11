@@ -1,4 +1,4 @@
-import TeamCard from "@/components/cards/TeamCard";
+import TeamCard from '@/components/cards/TeamCard'
 
 const page = () => {
   return (
@@ -25,7 +25,7 @@ const page = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default page;
+export default page
