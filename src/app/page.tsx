@@ -7,30 +7,31 @@ function Landing() {
       aria-labelledby="hero-text"
       className="flex flex-col text-white text-center place-content-center items-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 tablet:px-32 laptop:px-72"
     >
-      <motion.h1
-        variants={fadeIn('down', 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="uppercase text-4xl laptop:text-5xl font-bold mb-1"
-      >
-        engineering the web for <span className="text-orange-400">you</span>
-      </motion.h1>
-      <motion.h2
-        variants={fadeIn('down', 0.3)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="mb-5"
-      >
-        We design, build, and deploy for enterprises
-      </motion.h2>
+        <motion.h1
+          id="hero-text"
+          variants={fadeIn('down', 0.1)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="uppercase text-4xl laptop:text-5xl font-bold mb-1"
+        >
+          engineering the web for <span className="text-orange-400">you</span>
+        </motion.h1>
+        <motion.p
+          variants={fadeIn('down', 0.1)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="mb-5"
+        >
+          We design, build, and deploy for enterprises
+        </motion.p>
       <motion.a
-        variants={fadeIn('up', 0.4)}
+        variants={fadeIn('up', 0.1)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="bg-white text-black text-lg font-medium rounded-md px-7 py-1 laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400"
+        className="bg-white text-black text-lg font-medium rounded-md px-7 py laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400"
       >
         Let&apos;s Work
       </motion.a>
