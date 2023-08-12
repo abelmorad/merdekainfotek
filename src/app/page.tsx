@@ -33,7 +33,7 @@ function Landing() {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="bg-white text-black text-lg font-medium rounded-md px-7 py laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400"
+        className="bg-white text-black text-lg font-medium rounded-md px-7 py cursor-pointer laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400"
       >
         Let&apos;s Work
       </motion.a>
