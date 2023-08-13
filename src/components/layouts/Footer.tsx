@@ -10,7 +10,7 @@ const Footer = () => {
       <Image
         className="mb-3"
         src={logo}
-        alt="merdeka infotek"
+        alt="merdeka infotek logo"
         height={48}
         width={48}
       />
@@ -19,9 +19,15 @@ const Footer = () => {
           Let&apos;s be partners for developing a better web experience
         </p>
         <div className="flex place-content-center gap-4 mb-5">
-          <Image src={fb} alt="merdeka infotek" height={28} width={28} />
-          <Image src={linkedin} alt="merdeka infotek" height={28} width={28} />
-          <Image src={github} alt="merdeka infotek" height={28} width={28} />
+          <a href="https://facebook.com/" title="facebooklink" target="_blank">
+            <Image src={fb} alt="facebook" height={28} width={28} />
+          </a>
+          <a href="https://linkedin.com/" title="linkedin link" target="_blank">
+            <Image src={linkedin} alt="linkedin" height={28} width={28} />
+          </a>
+          <a href="https://github.com/" title="github link" target="_blank">
+            <Image src={github} alt="github" height={28} width={28} />
+          </a>
         </div>
         <p className="text-xs text-center mb-3">
           Copyright &copy; {new Date().getFullYear()} Merdeka Info Teknologi.
