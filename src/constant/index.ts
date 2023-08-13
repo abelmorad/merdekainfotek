@@ -126,28 +126,22 @@ export const team: Team[] = [
 export const navmenu: NavMenu[] = [
   {
     id: 0,
-    title: "Home",
-    to: "",
-
+    title: 'Home',
+    to: '/',
   },
   {
     id: 1,
-    title: "About",
-    to: "about",
-
+    title: 'About',
+    to: '/about',
   },
   {
     id: 2,
-    title: "Services",
-    to: "services",
-
+    title: 'Services',
+    to: '/service',
   },
   {
     id: 3,
-    title: "Contact",
-    to: "contact",
+    title: 'Contact',
+    to: '/contact',
   },
-
-
 ]
-
