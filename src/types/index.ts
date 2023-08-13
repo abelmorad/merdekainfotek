@@ -18,3 +18,8 @@ export interface Team {
   name: string
   position: string
 }
+export interface NavMenu {
+  id: number
+  title: string
+  to: string
+}

@@ -1,4 +1,4 @@
-import { Portfolio, Service, Team } from '@/types'
+import { Portfolio, Service, Team, NavMenu } from '@/types'
 
 export const portfolio: Portfolio[] = [
   {
@@ -122,3 +122,32 @@ export const team: Team[] = [
     position: 'Dev Ops',
   },
 ]
+
+export const navmenu: NavMenu[] = [
+  {
+    id: 0,
+    title: "Home",
+    to: "",
+
+  },
+  {
+    id: 1,
+    title: "About",
+    to: "about",
+
+  },
+  {
+    id: 2,
+    title: "Services",
+    to: "services",
+
+  },
+  {
+    id: 3,
+    title: "Contact",
+    to: "contact",
+  },
+
+
+]
+
