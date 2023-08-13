@@ -6,7 +6,7 @@ import { fadeIn } from '@/util/variants'
 const page = () => {
   return (
     <section
-      id="about-us"
+      id="about"
       className="flex flex-col pt-28 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
     >
       <section className="flex flex-col gap-10">
