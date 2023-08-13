@@ -128,28 +128,24 @@ export const navmenu: NavMenu[] = [
     id: 0,
     title: "Home",
     to: "",
-    delay: 0.4
 
   },
   {
     id: 1,
     title: "About",
     to: "about",
-    delay: 0.3
 
   },
   {
     id: 2,
     title: "Services",
     to: "services",
-    delay: 0.2
 
   },
   {
     id: 3,
     title: "Contact",
     to: "contact",
-    delay: 0.1
   },
 
 

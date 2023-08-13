@@ -22,5 +22,4 @@ export interface NavMenu {
   id: number
   title: string
   to: string
-  delay: number
 }
