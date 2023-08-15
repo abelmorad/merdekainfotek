@@ -1,40 +1,21 @@
-import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined'
-import logo from '/public/logo/merdaka.png'
-import Image from 'next/image'
+import { navmenu } from '@/constant'
+import Link from 'next/link'
 
 function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
   return (
     <nav
       style={style}
-      className="flex flex-col bg-black text-white w-screen h-screen absolute top-0 left-0"
+      className="flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
     >
-      <div className="flex p-4 items-center justify-between mb-8">
-        <div className="flex gap-4">
-          <Image className="h-14 w-14" src={logo} alt="merdaka logo" />
-          <p className="text-lg font-medium">
-            Merdaka Information
-            <br /> Teknologi
-          </p>
-        </div>
-        <CloseOutlinedIcon
-          style={{ height: '30px', width: '30px' }}
-          onClick={closeBtn}
-        />
-      </div>
-      <div className="flex flex-col text-4xl font-semibold text-right pr-5 gap-4">
-        <a onClick={closeBtn} href="#">
-          Home
-        </a>
-        <a onClick={closeBtn} href="#about-us">
-          About
-        </a>
-        <a onClick={closeBtn} href="#services">
-          Services
-        </a>
-        <a onClick={closeBtn} href="#contact-us">
-          Contact Us
-        </a>
-      </div>
+      <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4 text-white">
+        {navmenu.map((item) => {
+          return (
+            <Link key={item.id} href={item.to} onClick={closeBtn}>
+              {item.title && <span>{item.title}</span>}
+            </Link>
+          )
+        })}
+      </ul>
     </nav>
   )
 }

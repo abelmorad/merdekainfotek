@@ -10,7 +10,7 @@ export const fadeIn = (direction: string, delay: number): Variants => {
         type: 'tween',
         duration: 1.5,
         delay: delay,
-        ease: [0.25, 0.6, 0.3, 0.8],
+        ease: [0.645, 0.045, 0.355, 1],
       },
     },
     show: {
@@ -21,7 +21,7 @@ export const fadeIn = (direction: string, delay: number): Variants => {
         type: 'tween',
         duration: 1.4,
         delay: delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: [0.645, 0.045, 0.355, 1],
       },
     },
   }
