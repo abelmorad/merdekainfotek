@@ -23,7 +23,7 @@ const page = () => {
       </section>
       <div className="flex-col my-20">
         <motion.h2
-          variants={fadeIn('up', 0.3)}
+          variants={fadeIn('up', 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
@@ -32,7 +32,7 @@ const page = () => {
           meet our team
         </motion.h2>
         <motion.div
-          variants={fadeIn('up', 0.4)}
+          variants={fadeIn('up', 0.3)}
           initial="hidden"
           animate="show"
           exit="hidden"
