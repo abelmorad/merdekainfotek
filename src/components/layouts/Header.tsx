@@ -9,17 +9,17 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined'
 function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false)
 
-  const openRef = useRef<any>();
+  const openRef = useRef<any>()
 
   useEffect(() => {
     const handleOpen = (e: any) => {
       if (!openRef.current.contains(e.target)) {
-        setOpenMenu(false);
+        setOpenMenu(false)
       }
-    };
+    }
 
-    document.addEventListener("click", handleOpen);
-  }, []);
+    document.addEventListener('click', handleOpen)
+  }, [])
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -37,12 +37,16 @@ function Header() {
         </p>
       </div>
       <NavBarDesktop />
-      <div className="tablet:hidden place-self-start" onClick={() => setOpenMenu(!openMenu)} ref={openRef}>
+      <div
+        className="tablet:hidden place-self-start"
+        onClick={() => setOpenMenu(!openMenu)}
+        ref={openRef}
+      >
         <MenuOutlinedIcon style={{ height: '30px', width: '30px' }} />
         <NavBarMobile
-        style={openMenu ? { display: 'flex' } : { display: 'none' }}
-        closeBtn={() => setOpenMenu(!openMenu)}
-      />
+          style={openMenu ? { display: 'flex' } : { display: 'none' }}
+          closeBtn={() => setOpenMenu(!openMenu)}
+        />
       </div>
     </header>
   )
