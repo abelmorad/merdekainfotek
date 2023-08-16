@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import logo from '/public/logo/merdaka.png'
 import Image from 'next/image'
 import NavBarDesktop from './NavBarDesktop'
@@ -8,6 +8,18 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined'
 
 function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false)
+
+  const openRef = useRef<any>();
+
+  useEffect(() => {
+    const handleOpen = (e: any) => {
+      if (!openRef.current.contains(e.target)) {
+        setOpenMenu(false);
+      }
+    };
+
+    document.addEventListener("click", handleOpen);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -25,12 +37,12 @@ function Header() {
         </p>
       </div>
       <NavBarDesktop />
-      <NavBarMobile
+      <div className="tablet:hidden place-self-start" onClick={() => setOpenMenu(!openMenu)} ref={openRef}>
+        <MenuOutlinedIcon style={{ height: '30px', width: '30px' }} />
+        <NavBarMobile
         style={openMenu ? { display: 'flex' } : { display: 'none' }}
         closeBtn={() => setOpenMenu(!openMenu)}
       />
-      <div className="tablet:hidden place-self-start" onClick={() => setOpenMenu(!openMenu)}>
-        <MenuOutlinedIcon style={{ height: '30px', width: '30px' }} />
       </div>
     </header>
   )
