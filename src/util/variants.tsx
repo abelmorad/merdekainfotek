@@ -26,3 +26,23 @@ export const fadeIn = (direction: string, delay: number): Variants => {
     },
   }
 }
+
+export const slideIn = (direction: string, delay: number): Variants => {
+  const x = direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0
+
+  return {
+    hidden: {
+      x,
+      y: 0,
+    },
+    show: {
+      x: 0,
+      y: 0,
+      transition: {
+        type: 'tween',
+        delay,
+        ease: [0.645, 0.045, 0.355, 1],
+      },
+    },
+  }
+}
