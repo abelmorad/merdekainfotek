@@ -29,6 +29,16 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bg-contact {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 13 37 / var(--tw-bg-opacity));
+}
+
+.bg-contact-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+}
+
 @layer base {
   body {
     overflow-x: hidden;
