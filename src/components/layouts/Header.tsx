@@ -20,7 +20,7 @@ function Header() {
       <div className="flex gap-4 cursor-pointer" onClick={scrollToTop}>
         <Image className="h-14 w-14 " src={logo} alt="merdaka logo" />
         <p className="text-lg font-medium">
-          Merdaka Information
+          Merdeka Information
           <br /> Teknologi
         </p>
       </div>
@@ -29,7 +29,7 @@ function Header() {
         style={openMenu ? { display: 'flex' } : { display: 'none' }}
         closeBtn={() => setOpenMenu(!openMenu)}
       />
-      <div className="tablet:hidden" onClick={() => setOpenMenu(!openMenu)}>
+      <div className="tablet:hidden place-self-start" onClick={() => setOpenMenu(!openMenu)}>
         <MenuOutlinedIcon style={{ height: '30px', width: '30px' }} />
       </div>
     </header>

@@ -1,13 +1,21 @@
 import { navmenu } from '@/constant'
+import { CloseOutlined, LinkedIn } from '@mui/icons-material'
 import Link from 'next/link'
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
   return (
     <nav
       style={style}
-      className="flex p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl"
+      className="flex flex-col gap-5 black-gradient fixed top-0 right-0 text-white h-1/2 w-screen text-right p-4"
     >
-      <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4 text-white">
+      <div onClick={() => closeBtn(!closeBtn)}>
+        <CloseOutlined style={{ height: '30px', width: '30px' }} />
+      </div>
+      <ul className="flex flex-col gap-4 text-2xl font-medium">
         {navmenu.map((item) => {
           return (
             <Link key={item.id} href={item.to} onClick={closeBtn}>
