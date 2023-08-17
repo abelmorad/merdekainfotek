@@ -7,7 +7,7 @@ const page = () => {
     <section
       id="service"
       className="flex flex-col pt-28 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
-      aria-labelledby='contact'
+      aria-labelledby="contact"
     >
       <motion.div
         variants={slideIn('down', 0.1)}
@@ -16,9 +16,11 @@ const page = () => {
         exit="hidden"
         className="flex flex-col text-black"
       >
-        <h1 id='contact' className="text-4xl font-semibold capitalize mb-5">Get in touch</h1>
+        <h1 id="contact" className="text-4xl font-semibold capitalize mb-5">
+          Get in touch
+        </h1>
         <form className="flex flex-col text-start">
-          <label htmlFor="name" className="mb-2" aria-label='Enter your name'>
+          <label htmlFor="name" className="mb-2" aria-label="Enter your name">
             Enter your name
           </label>
           <input
@@ -27,7 +29,7 @@ const page = () => {
             name="name"
             placeholder="Please enter a name"
           />
-          <label htmlFor="email" className="mb-2" aria-label='Enter your email'>
+          <label htmlFor="email" className="mb-2" aria-label="Enter your email">
             Enter your email
           </label>
           <input
@@ -36,7 +38,11 @@ const page = () => {
             name="email"
             placeholder="Please enter your email"
           />
-          <label htmlFor="message" className="mb-2" aria-label='Enter your message'>
+          <label
+            htmlFor="message"
+            className="mb-2"
+            aria-label="Enter your message"
+          >
             Enter your message
           </label>
           <textarea
