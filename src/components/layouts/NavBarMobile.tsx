@@ -10,7 +10,7 @@ function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
   return (
     <nav
       style={style}
-      className="flex flex-col gap-5 black-gradient fixed top-0 right-0 text-white h-1/2 w-screen text-right p-4"
+      className="flex flex-col gap-5 black-gradient fixed top-0 right-0 text-white h-1/2 w-screen text-right p-4 pt-7 rounded-b-lg shadow-gray-600 shadow-lg"
     >
       <div onClick={() => closeBtn(!closeBtn)}>
         <CloseOutlined style={{ height: '30px', width: '30px' }} />
