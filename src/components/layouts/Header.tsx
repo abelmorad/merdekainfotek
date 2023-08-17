@@ -38,7 +38,7 @@ function Header() {
       </div>
       <NavBarDesktop />
       <div
-        className="tablet:hidden place-self-start"
+        className="tablet:hidden"
         onClick={() => setOpenMenu(!openMenu)}
         ref={openRef}
       >
