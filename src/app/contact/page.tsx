@@ -7,51 +7,47 @@ const page = () => {
     <section
       id="service"
       className="flex flex-col pt-28 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
+      aria-labelledby='contact'
     >
       <motion.div
-        variants={slideIn('left', 0.2)}
+        variants={slideIn('down', 0.1)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex-[0.75] bg-contact p-8 rounded-2xl"
+        className="flex flex-col text-black"
       >
-        <p className="mobil:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
-          Get in touch
-        </p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
-        <form className="mt-12 flex flex-col gap-8">
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              placeholder="What's your good name?"
-              className="bg-contact-secondary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
+        <h1 id='contact' className="text-4xl font-semibold capitalize mb-5">Get in touch</h1>
+        <form className="flex flex-col text-start">
+          <label htmlFor="name" className="mb-2" aria-label='Enter your name'>
+            Enter your name
           </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              type="email"
-              name="email"
-              placeholder="What's your web address?"
-              className="bg-contact-secondary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
+          <input
+            className="flex p-2 border-black border-solid border rounded-md mb-4 outline-orange-500"
+            type="text"
+            name="name"
+            placeholder="Please enter a name"
+          />
+          <label htmlFor="email" className="mb-2" aria-label='Enter your email'>
+            Enter your email
           </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              placeholder="What you want to say?"
-              className="bg-contact-secondary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
+          <input
+            className="flex p-2 border-black border-solid border rounded-md mb-4 outline-orange-500"
+            type="text"
+            name="email"
+            placeholder="Please enter your email"
+          />
+          <label htmlFor="message" className="mb-2" aria-label='Enter your message'>
+            Enter your message
           </label>
-
+          <textarea
+            rows={7}
+            name="message"
+            placeholder="Please enter your message"
+            className="flex p-2 border-black border-solid border rounded-md mb-6 outline-orange-500"
+          />
           <button
             type="submit"
-            className="bg-contact-secondary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            className="flex px-4 py-2 place-content-center place-self-center w-full tablet:w-80 font-medium bg-black text-white hover:bg-orange-500 hover:text-white rounded-md mb-4 min-width:300px"
           >
             Send
           </button>
