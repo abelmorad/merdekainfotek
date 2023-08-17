@@ -1,7 +1,5 @@
 'use client'
-import { styles } from '@/style/style'
-import { slideIn } from '@/util/variants'
-import { motion } from 'framer-motion'
+
 const page = () => {
   return (
     <section
@@ -9,11 +7,7 @@ const page = () => {
       className="flex flex-col pt-28 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
       aria-labelledby="contact"
     >
-      <motion.div
-        variants={slideIn('down', 0.1)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
+      <div
         className="flex flex-col text-black"
       >
         <h1 id="contact" className="text-4xl font-semibold capitalize mb-5">
@@ -58,7 +52,7 @@ const page = () => {
             Send
           </button>
         </form>
-      </motion.div>
+      </div>
     </section>
   )
 }
