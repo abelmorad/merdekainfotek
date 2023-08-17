@@ -11,9 +11,9 @@ const page = () => {
     >
       <section className="flex flex-col gap-10">
         <div className="flex-col">
-          <motion.h2 className="capitalize mb-5 font-semibold text-4xl">
+          <motion.h1 className="capitalize mb-5 font-semibold text-4xl">
             about us
-          </motion.h2>
+          </motion.h1>
           <p className="desktop:px-48">
             Merdeka Information Teknologi is a web development company based in
             the Philippines. We are a team of Muslim engineers specializing in
