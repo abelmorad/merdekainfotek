@@ -16,7 +16,7 @@ function Landing() {
           exit="hidden"
           className="uppercase text-4xl laptop:text-5xl font-bold mb-1"
         >
-          engineering the web for <span className="text-orange-400">you</span>
+          engineering the web for <span className="text-orange-500">you</span>
         </motion.h1>
         <motion.p
           variants={fadeIn('down', 0.1)}
@@ -33,7 +33,7 @@ function Landing() {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="bg-white text-black text-lg font-medium rounded-md px-7 py-1 cursor-pointer laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-400"
+        className="bg-white text-black text-lg font-medium rounded-md px-7 py-1 cursor-pointer laptop:px-10 laptop:py-2 hover:text-white hover:bg-orange-500"
         href="/contact"
       >
         Let&apos;s Work
