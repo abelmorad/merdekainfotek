@@ -28,7 +28,7 @@ function Header() {
   }
 
   return (
-    <header className="flex items-center justify-between p-4 fixed bg-white w-screen z-50 laptop:px-20">
+    <header className="flex items-center justify-between p-4 fixed bg-black text-white w-screen z-50 laptop:px-20">
       <div className="flex gap-4 cursor-pointer" onClick={scrollToTop}>
         <Image className="h-14 w-14 " src={logo} alt="merdaka logo" />
         <p className="text-lg font-medium">
