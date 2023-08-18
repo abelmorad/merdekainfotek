@@ -7,13 +7,13 @@ const page = () => {
   return (
     <section
       id="about"
-      className="flex flex-col pt-28 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
+      className="flex flex-col pt-36 pb-20 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
     >
       <section className="flex flex-col gap-10">
         <div className="flex-col">
-          <motion.h2 className="capitalize mb-5 font-semibold text-4xl">
+          <motion.h1 className="capitalize mb-5 font-semibold text-4xl">
             about us
-          </motion.h2>
+          </motion.h1>
           <p className="desktop:px-48">
             Merdeka Information Teknologi is a web development company based in
             the Philippines. We are a team of Muslim engineers specializing in

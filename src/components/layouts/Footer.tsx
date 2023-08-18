@@ -6,7 +6,7 @@ import github from 'public/logo/github.svg'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col place-content-center items-center pt-20 px-10">
+    <footer className="flex flex-col place-content-center items-center pt-20 px-10 bg-black text-white">
       <Image
         className="mb-3"
         src={logo}
