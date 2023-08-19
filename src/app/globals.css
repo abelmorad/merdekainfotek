@@ -44,3 +44,13 @@
     overflow-x: hidden;
   }
 }
+
+@layer components {
+  .title{
+    font-family: var(--font-face, "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif);
+    @apply capitalize text-xl mobile:text-2xl tablet:text-3xl desktop:text-4xl font-semibold mb-3 
+  }
+  .sub_title{
+    @apply mb-10 desktop:text-lg tablet:text-base mobile:text-sm text-gray-700 font-medium 
+  }
+}
