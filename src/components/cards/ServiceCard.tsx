@@ -1,6 +1,6 @@
 import { service } from '@/constant'
 import Image from 'next/image'
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { AiOutlineArrowRight } from 'react-icons/ai'
 import { motion } from 'framer-motion';
 
 const ServiceCard = () => {
@@ -28,7 +28,7 @@ const ServiceCard = () => {
             <p className='text-sm mobile:text-xs tablet:text-sm text-justify'>{data.description.substring(0, 100)}...</p>
             <a
               className='flex justify-items-start mt-5 text-sm mobile:text-xs tablet:text-sm hover:text-orange-400'>
-              Read more<KeyboardArrowRightIcon />
+              Read more<AiOutlineArrowRight />
             </a>
           </div>
         </motion.div>
