@@ -13,9 +13,9 @@ const Page = () => {
   return (
     <section
       id="about"
-      className="flex flex-col pt-36 pb-20 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
+      className="flex flex-col pt-36 pb-20 px-4 text-center tablet:px-16 desktop:px-44"
     >
-      <div className="md:container md:mx-auto flex flex-col gap-3">
+      <div className="flex flex-col gap-3">
         <div className="flex-col">
           <h1 className="title">
             about us
@@ -39,7 +39,7 @@ const Page = () => {
           </motion.h2>
           <motion.div
             ref={ref}
-            className="flex flex-col items-center gap-5 tablet:grid tablet:grid-flow-col tablet:grid-rows-3 tablet:place-content-center laptop:grid-rows-2 desk"
+            className='grid place-items-center gap-8 sm:grid-cols-2 sm:px-16 laptop:grid-cols-3 desktop:px-36'
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
             exit="hidden"
