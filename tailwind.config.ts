@@ -19,8 +19,12 @@ const config: Config = {
     },
 
     screens: {
-      mobile: "320px",
-      // => @media (min-width: 375px) { ... }
+
+      mobile: "480px",
+      // => @media (min-width: 480px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
 
       tablet: "768px",
       // => @media (min-width: 768px) { ... }
