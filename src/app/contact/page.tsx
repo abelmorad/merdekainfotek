@@ -49,13 +49,13 @@ const Page = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col pt-36 pb-20 mobile:text-center mobile:px-4 tablet:px-16 desktop:px-44"
+      className="flex flex-col pt-36 pb-20 text-center px-4 tablet:px-16 desktop:px-44"
       aria-labelledby="contact"
     >
       <div
         className="flex flex-col text-black"
       >
-        <h1 id="contact" className="text-4xl font-semibold capitalize mb-5">
+        <h1 id="contact" className="title">
           Get in touch
         </h1>
         <form ref={form} onSubmit={sendEmail} className="flex flex-col text-start">
