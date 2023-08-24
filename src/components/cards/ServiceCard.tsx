@@ -24,10 +24,10 @@ const ServiceCard = () => {
             width={150}
           />
           <div className='flex flex-col'>
-            <h5 className='font-sans uppercase font-medium mb-4 text-base mobile:text-sm tablet:text-base tracking-wider'>{data.title} </h5>
+            <h2 className='uppercase font-semibold mb-4 text-base mobile:text-sm tablet:text-base tracking-wider'>{data.title} </h2>
             <p className='text-sm mobile:text-xs tablet:text-sm text-justify'>{data.description.substring(0, 100)}...</p>
             <a
-              className='flex justify-items-start mt-5 text-sm mobile:text-xs tablet:text-sm hover:text-orange-400'>
+              className='flex items-center gap-2 mt-5 text-sm mobile:text-xs tablet:text-sm hover:text-orange-400'>
               Read more<AiOutlineArrowRight />
             </a>
           </div>
