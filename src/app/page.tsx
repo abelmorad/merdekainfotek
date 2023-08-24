@@ -5,7 +5,7 @@ function Landing() {
   return (
     <section
       aria-labelledby="hero-text"
-      className="flex flex-col text-white text-center place-content-center items-center hero-bg h-screen w-screen mobile:px-4 mobile:py-20 tablet:px-32 laptop:px-72"
+      className="flex flex-col text-white text-center place-content-center items-center hero-bg h-screen w-screen px-4 tablet:px-32 laptop:px-72"
     >
       <header>
         <motion.h1
