@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 function NavBarDesktop() {
 
   return (
-    <nav className="tablet:flex gap-4 font-medium mobile:hidden">
+    <nav className="tablet:flex gap-4 font-medium hidden">
       <ul className='flex gap-7'>
         {navmenu.map((item) => {
           return (

@@ -6,7 +6,7 @@ function NavBarMobile({ style, closeBtn }: { style: any; closeBtn: any }) {
   return (
     <nav
       style={style}
-      className="flex flex-col gap-5 black-gradient items-end fixed top-0 right-0 text-white h-1/2 w-screen text-right p-4 pt-7 rounded-b-lg shadow-gray-600 shadow-lg"
+      className="flex tablet:hidden flex-col gap-5 black-gradient items-end fixed top-0 right-0 text-white h-1/2 w-screen text-right p-4 pt-7 rounded-b-lg shadow-gray-600 shadow-lg"
     >
       <AiOutlineClose size="2rem" onClick={() => closeBtn(!closeBtn)} />
       {navmenu.map((item) => {
