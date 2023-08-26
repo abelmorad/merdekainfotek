@@ -38,44 +38,22 @@ export const portfolio: Portfolio[] = [
 export const service: Service[] = [
   {
     id: 1,
+    page: "/service/fullstack",
     image:
       'https://raw.githubusercontent.com/abelmorad/merdeka-info-tek/main/public/products/lms.svg',
-    title: 'Learning Management System',
+    title: 'Fullstack Development Bootcamp',
     description:
-      'LMS development can be a complex and time-consuming process, but a well-designed and implemented system can revolutionize the way educational content is delivered and accessed, making learning more accessible and efficient for a wide range of users.',
+      'If you are aiming for a career that offers high flexibility, substantial income, and allows you to travel the world while working, consider training to become a web developer. In our bootcamp, we will guide students in acquiring the skills needed to become FULLSTACK DEVELOPER, manage projects effectively, and practice ethical coding principles',
   },
   {
     id: 2,
+    page: "/service/webdev",
     image:
       'https://raw.githubusercontent.com/abelmorad/merdeka-info-tek/main/public/products/mobile.svg',
-    title: 'Mobile App Development',
-    description:
-      'Successful mobile apps offer a seamless user experience, deliver value to users, and contribute to achieving business objectives.',
-  },
-  {
-    id: 3,
-    image:
-      'https://raw.githubusercontent.com/abelmorad/merdeka-info-tek/main/public/products/pos.svg',
-    title: 'Point of Sale System',
-    description:
-      'POS development plays a critical role in optimizing the sales process, improving inventory management, and providing valuable insights into business performance.',
-  },
-  {
-    id: 4,
-    image:
-      'https://raw.githubusercontent.com/abelmorad/merdeka-info-tek/main/public/products/pwa.svg',
-    title: 'Progressive Web Application',
-    description:
-      'PWA development has gained popularity due to its ability to deliver a seamless and engaging user experience, comparable to that of native mobile apps, without the need for users to download or install anything from an app store.',
-  },
-  {
-    id: 5,
-    image:
-      'https://raw.githubusercontent.com/abelmorad/merdeka-info-tek/main/public/products/website.svg',
     title: 'Web Development',
     description:
-      'Web development is a dynamic and evolving field, and developers must stay updated with the latest technologies and best practices to create high-quality and efficient web solutions that meet the needs of modern users and businesses.',
-  },
+      'We develop and maintain web applications for enterprises',
+  }
 ]
 
 export const team: Team[] = [
@@ -90,36 +68,43 @@ export const team: Team[] = [
     id: 2,
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
-    name: 'El Chapo',
-    position: 'Fullstack Developer',
-  },
-  {
-    id: 3,
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
     name: 'Sharhabeel Morad',
-    position: 'Front-end Developer',
-  },
-  {
-    id: 4,
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
-    name: 'Monkey D. Luffy',
-    position: 'Backend Developer',
-  },
-  {
-    id: 5,
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
-    name: 'Emma Watson',
-    position: 'UI/UX Developer',
+    position: 'Project Manager/FE',
   },
   {
     id: 6,
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
-    name: 'Elsa Mae',
-    position: 'Dev Ops',
+    name: 'Aiza Blo',
+    position: 'Senior Dev/Consultant',
+  },
+  {
+    id: 3,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Basam Serad',
+    position: 'Full-stack Developer',
+  },
+  {
+    id: 4,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Nashruddin Habibon',
+    position: 'Full-stack Developer',
+  },
+  {
+    id: 7,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Al Nadzmer Mabbol Jamil',
+    position: 'Full-stack Developer/BA',
+  },
+  {
+    id: 5,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Dianne Cabeliza',
+    position: 'UI/UX',
   },
 ]
 
