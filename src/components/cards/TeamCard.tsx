@@ -6,7 +6,7 @@ const TeamCard = () => {
     <>
       {team.map((data) => (
         <div
-          className="flex flex-col place-content-center items-center border border-gray-300 rounded-md h-72 w-60 px-5 py-10 text-center"
+          className="flex flex-col place-content-center bg-white shadow-md items-center border border-gray-300 rounded-md h-72 w-60 px-5 py-10 text-center"
           key={data.id}
         >
           <Image
