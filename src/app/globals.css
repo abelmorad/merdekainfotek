@@ -7,6 +7,9 @@
   transition: 0.2s;
 }
 
+body {
+  background-color: #f0f0f5 ;
+}
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/images/heroImg.jpg');
@@ -47,6 +50,6 @@
 
 @layer components {
   .title{
-    @apply capitalize text-4xl font-semibold mb-10 
+    @apply capitalize text-3xl font-semibold mb-10 
   }
 }
