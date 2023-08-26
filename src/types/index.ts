@@ -10,6 +10,7 @@ export interface Service {
   image: string
   title: string
   description: string
+  page: string
 }
 
 export interface Team {
