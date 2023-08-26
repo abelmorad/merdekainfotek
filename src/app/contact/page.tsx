@@ -3,8 +3,12 @@ import { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Page = () => {
-  const form = useRef<HTMLFormElement | null>(null);
+  const form = useRef<HTMLFormElement | null>(null)
   const [isSent, setIsSent] = useState(false)
+
+  const serviceId: string = process.env.NEXT_PUBLIC_SERVICE_ID || ''
+  const templateId: string = process.env.NEXT_PUBLIC_TEMPLATE_ID || ''
+  const userId: string = process.env.NEXT_PUBLIC_USER_ID || ''
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
@@ -12,10 +16,10 @@ const Page = () => {
     if (form.current)
       emailjs
         .sendForm(
-          'service_njzhpkh', // service id
-          'template_afov05t', // template id
+          serviceId,
+          templateId,
           form.current,
-          '6tFOcvQTw7pGVjxTA' // user ID
+          userId,
         )
         .then(
           (result) => {
