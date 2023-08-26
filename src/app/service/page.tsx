@@ -9,7 +9,7 @@ const page = () => {
     >
       <div className="flex flex-col mb-10">
         <h2 className="title">Products & Services</h2>
-        <p className="sub_title">
+        <p className='text-gray-600'>
           We&apos;re providing a very affordable cost for a high quality
           services.
         </p>
