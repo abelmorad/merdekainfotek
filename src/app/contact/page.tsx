@@ -11,7 +11,7 @@ const Page = () => {
   const userId: string = process.env.NEXT_PUBLIC_USER_ID || ''
 
   const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (form.current)
       emailjs
@@ -23,32 +23,31 @@ const Page = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
-            setIsSent(true);
+            console.log(result.text)
+            setIsSent(true)
             if (form.current) {
-              form.current.reset();
+              form.current.reset()
             }
           },
           (err) => {
-            console.log(err.text);
-            alert('error on sending message');
+            console.log(err.text)
+            alert('error on sending message')
           }
         )
   }
 
   useEffect(() => {
-    let timeoutId: ReturnType<typeof setTimeout>;
+    let timeoutId: ReturnType<typeof setTimeout>
     if (isSent) {
       timeoutId = setTimeout(() => {
-        setIsSent(false);
-      }, 3000);
+        setIsSent(false)
+      }, 3000)
     }
 
     return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [isSent]);
-
+      clearTimeout(timeoutId)
+    }
+  }, [isSent])
 
   return (
     <section
@@ -56,13 +55,19 @@ const Page = () => {
       className="flex flex-col pt-36 pb-20 text-center px-4 tablet:px-16 desktop:px-44"
       aria-labelledby="contact"
     >
-      <div
-        className="flex flex-col text-black"
-      >
-        <h1 id="contact" className="title">
-          Get in touch
-        </h1>
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col text-start">
+      <div className="flex flex-col text-black place-content-center items-center">
+        <div className="flex flex-col gap-3 mb-10">
+          <h1 className="title">get in touch</h1>
+          <p className="text-gray-600 mb-4">
+            We will do our best to answer your inquiries
+          </p>
+        </div>
+
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col text-start w-full max-w-2xl"
+        >
           <label htmlFor="name" className="mb-2" aria-label="Enter your name">
             Enter your name
           </label>

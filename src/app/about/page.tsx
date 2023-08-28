@@ -12,11 +12,11 @@ const Page = () => {
   return (
     <section
       id="about"
-      className="flex flex-col pt-36 pb-20 px-4 text-center tablet:px-16 laptop:px-12 desktop:px-44"
+      className="flex flex-col pt-36 pb-20 text-center px-4 tablet:px-16 desktop:px-44"
     >
       <div className="flex flex-col gap-3 mb-10">
         <h1 className="title">about us</h1>
-        <p>
+        <p className='text-gray-600'>
           Merdeka Information Teknologi is a web development company based in
           the Philippines. We are a team of Muslim engineers specializing in
           building web applications.
