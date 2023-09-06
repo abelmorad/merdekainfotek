@@ -20,11 +20,11 @@ function page() {
           <div>
             <h3 className="text-xl font-medium mb-3">You will learn</h3>
             <ul className="grid text-start items-center place-self-center list-disc text-gray-600">
-              <li>Career Shifter</li>
-              <li>Out of School youths</li>
-              <li>High School Graduates</li>
-              <li>College Graduates</li>
-              <li>Currently Unemployed</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git & GitHub</li>
+              <li>MongoDB, ExpressJS,<br/>React, and NodeJS</li>
             </ul>
           </div>
           <div>
@@ -81,7 +81,7 @@ function page() {
           </label>
           <input
             className="flex p-2 border-black border-solid border rounded-md mb-4 outline-orange-500 required"
-            type="number"
+            type="tel"
             name="mobile"
             id="mobile"
             placeholder="Please enter your number"
