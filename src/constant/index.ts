@@ -72,13 +72,6 @@ export const team: Team[] = [
     position: 'Project Manager/FE',
   },
   {
-    id: 6,
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
-    name: 'Aiza Blo',
-    position: 'Senior Dev/Consultant',
-  },
-  {
     id: 3,
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
@@ -100,10 +93,24 @@ export const team: Team[] = [
     position: 'Full-stack Developer/BA',
   },
   {
+    id: 6,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Amir Duriun',
+    position: 'Full-stack Developer',
+  },
+  {
     id: 5,
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
     name: 'Dianne Cabeliza',
+    position: 'UI/UX',
+  },
+  {
+    id: 8,
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgEs46kqkF1xGSJbgA2BJPhDpAM0MUXFab7qkFiQCKIyCoagwj',
+    name: 'Kate Bautista',
     position: 'UI/UX',
   },
 ]
