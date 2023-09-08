@@ -5,9 +5,9 @@ const page = () => {
   return (
     <section
       id="service"
-      className="flex flex-col h-screen item-center pt-36 pb-20 text-center px-4 tablet:px-16 desktop:px-44"
+      className="flex flex-col pt-36 pb-20 text-center px-4 tablet:px-16 desktop:px-44"
     >
-      <div className="flex flex-col mb-10">
+      <div className="flex flex-col mb-10 ">
         <h2 className="title">Products & Services</h2>
         <p className='text-gray-600'>
           We&apos;re providing a very affordable cost for a high quality
