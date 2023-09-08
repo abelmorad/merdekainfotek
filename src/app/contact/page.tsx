@@ -6,8 +6,8 @@ const Page = () => {
   const form = useRef<HTMLFormElement | null>(null)
   const [isSent, setIsSent] = useState(false)
 
-  const serviceId: string = process.env.NEXT_CONTACT_SERVICE_ID || ''
-  const templateId: string = process.env.NEXT_CONTACT_TEMPLATE_ID || ''
+  const serviceId: string = process.env.NEXT_PUBLIC_SERVICE_ID || ''
+  const templateId: string = process.env.NEXT_PUBLIC_TEMPLATE_ID || ''
   const userId: string = process.env.NEXT_PUBLIC_USER_ID || ''
 
   const sendEmail = (e: React.FormEvent) => {
