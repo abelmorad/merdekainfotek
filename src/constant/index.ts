@@ -76,28 +76,28 @@ export const team: Team[] = [
     image:
       '/avatar/basam.jpg',
     name: 'Basam Serad',
-    position: 'Full-stack Developer',
+    position: 'FS Dev/Project Lead',
   },
   {
     id: 4,
     image:
       '/avatar/nash.jpg',
     name: 'Nashruddin Habibon',
-    position: 'Full-stack Developer',
+    position: 'Fullstack Developer',
   },
   {
     id: 7,
     image:
       '/avatar/al.png',
     name: 'Al Nadzmer Mabbol Jamil',
-    position: 'Full-stack Developer/BA',
+    position: 'Fullstack Developer/BA',
   },
   {
     id: 6,
     image:
       '/avatar/amir.png',
     name: 'Amir Duruin',
-    position: 'Full-stack Developer',
+    position: 'Fullstack Developer',
   },
   {
     id: 5,
